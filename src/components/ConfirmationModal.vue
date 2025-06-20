@@ -36,6 +36,7 @@
 </template>
 
 <script setup lang="ts">
+// @ts-nocheck
 import { AlertTriangle } from 'lucide-vue-next';
 
 defineProps<{

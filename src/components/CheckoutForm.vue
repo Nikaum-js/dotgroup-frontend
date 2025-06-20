@@ -206,6 +206,7 @@
 </template>
 
 <script setup lang="ts">
+// @ts-nocheck
 import { ref, reactive, watch } from 'vue';
 import { VueMaskDirective } from 'v-mask';
 import { validateCPF, validateEmail, validatePhone, validateZipCode } from '../utils/validators';

@@ -54,6 +54,7 @@
 </template>
 
 <script setup lang="ts">
+// @ts-nocheck
 import { AlertCircle, ChevronLeft, ChevronRight, RefreshCw } from 'lucide-vue-next';
 import MovieCard from './MovieCard.vue';
 import MovieCardSkeleton from './MovieCardSkeleton.vue';

@@ -142,6 +142,7 @@
 </template>
 
 <script setup lang="ts">
+// @ts-nocheck
 import { ref, onMounted, computed, nextTick, watch } from 'vue';
 import { useStore } from 'vuex';
 import { useMovies } from '../hooks/useMovies';

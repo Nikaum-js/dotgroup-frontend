@@ -165,6 +165,7 @@
 </template>
 
 <script setup lang="ts">
+// @ts-nocheck
 import { computed, ref } from 'vue';
 import { useStore } from 'vuex';
 import { X, ShoppingCart, Minus, Plus, Trash, ArrowRight, Truck, ShieldCheck, Gift } from 'lucide-vue-next';

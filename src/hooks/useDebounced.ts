@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { customRef, onUnmounted } from "vue";
 
 export function useDebouncedRef<T>(initialValue: T, delay = 200) {

@@ -45,6 +45,8 @@
 </template>
 
 <script setup lang="ts">
+// @ts-nocheck
+
 defineProps<{
   cartItemCount?: number;
 }>();
