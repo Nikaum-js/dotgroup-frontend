@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium tracking-tight;
+  }
+
+  .text-display {
+    @apply text-4xl sm:text-5xl font-semibold tracking-tight;
+  }
+
+  .text-title {
+    @apply text-2xl sm:text-3xl font-semibold;
+  }
+
+  .text-subtitle {
+    @apply text-xl font-medium;
+  }
+
+  .text-body {
+    @apply text-base leading-relaxed;
+  }
+
+  .text-small {
+    @apply text-sm leading-relaxed;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgb(17 24 39 / 0.5) inset !important;
+    -webkit-text-fill-color: #fff !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  input {
+    color-scheme: dark;
+  }
+
+  input:autofill {
+    border-color: rgb(55 65 81 / 1) !important;
+  }
+
+  input:-webkit-autofill {
+    border-color: rgb(55 65 81 / 1) !important;
+  }
+
+  .cart-items-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(239, 68, 68, 0.3) rgba(17, 24, 39, 0.3);
+  }
+  
+  .cart-items-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .cart-items-scroll::-webkit-scrollbar-track {
+    background: rgba(17, 24, 39, 0.3);
+    border-radius: 8px;
+    margin: 4px;
+  }
+  
+  .cart-items-scroll::-webkit-scrollbar-thumb {
+    background: rgba(239, 68, 68, 0.3);
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .cart-items-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(239, 68, 68, 0.5);
+  }
+  
+  @supports (scrollbar-color: auto) {
+    .cart-items-scroll {
+      scrollbar-width: thin;
+      scrollbar-color: rgba(239, 68, 68, 0.3) rgba(17, 24, 39, 0.3);
+    }
+  }
+} 
