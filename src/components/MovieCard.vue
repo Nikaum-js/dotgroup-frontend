@@ -75,7 +75,6 @@
 </template>
 
 <script setup lang="ts">
-// @ts-nocheck
 import { computed, ref } from 'vue';
 import { Heart, Star, ShoppingBasket } from 'lucide-vue-next';
 import { calculateMoviePrice, formatPrice } from '../utils/price';
@@ -85,6 +84,7 @@ import { useRouter } from 'vue-router';
 interface Movie {
   id: number;
   title: string;
+  overview: string;
   poster_path: string | null;
   release_date: string;
   vote_average: number;

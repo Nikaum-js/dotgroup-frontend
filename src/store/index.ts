@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { createStore } from "vuex";
 import type { Movie } from "../types/movie";
 import { calculateMoviePrice } from "../utils/price";

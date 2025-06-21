@@ -71,10 +71,9 @@
 </template>
 
 <script setup lang="ts">
-// @ts-nocheck
 import { useStore } from 'vuex';
 
-const props = defineProps<{
+defineProps<{
   show: boolean;
 }>();
 

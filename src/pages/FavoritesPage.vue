@@ -46,7 +46,6 @@
 </template>
 
 <script setup lang="ts">
-// @ts-nocheck
 import { computed } from 'vue';
 import { useStore } from 'vuex';
 import { ArrowLeft, ShoppingCart } from 'lucide-vue-next';

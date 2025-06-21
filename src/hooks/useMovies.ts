@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { ref } from "vue";
 import api from "../services/api";
 import type { Movie, MovieResponse } from "../types/movie";

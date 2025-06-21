@@ -206,15 +206,11 @@
 </template>
 
 <script setup lang="ts">
-// @ts-nocheck
 import { ref, reactive, watch } from 'vue';
-import { VueMaskDirective } from 'v-mask';
 import { validateCPF, validateEmail, validatePhone, validateZipCode } from '../utils/validators';
 import { formatCPF, formatPhone, formatZipCode } from '../utils/formatters';
 import SuccessModal from './SuccessModal.vue';
 import { useRouter } from 'vue-router';
-
-const vMask = VueMaskDirective;
 
 interface FormData {
   fullName: string;

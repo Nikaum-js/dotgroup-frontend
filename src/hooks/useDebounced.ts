@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { customRef, onUnmounted } from "vue";
 
 export function useDebouncedRef<T>(initialValue: T, delay = 200) {
@@ -9,7 +8,7 @@ export function useDebouncedRef<T>(initialValue: T, delay = 200) {
     if (timeout) clearTimeout(timeout);
   });
 
-  return customRef((track, trigger) => ({
+  return customRef((track: () => void, trigger: () => void) => ({
     get() {
       track();
       return innerValue;

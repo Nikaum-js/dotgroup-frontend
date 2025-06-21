@@ -54,7 +54,6 @@
 </template>
 
 <script setup lang="ts">
-// @ts-nocheck
 import { AlertCircle, ChevronLeft, ChevronRight, RefreshCw } from 'lucide-vue-next';
 import MovieCard from './MovieCard.vue';
 import MovieCardSkeleton from './MovieCardSkeleton.vue';
@@ -62,6 +61,7 @@ import MovieCardSkeleton from './MovieCardSkeleton.vue';
 interface Movie {
   id: number;
   title: string;
+  overview: string;
   poster_path: string | null;
   release_date: string;
   vote_average: number;

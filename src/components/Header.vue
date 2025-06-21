@@ -32,7 +32,7 @@
               />
             </svg>
             <span 
-              v-if="cartItemCount > 0"
+              v-if="cartItemCount && cartItemCount > 0"
               class="absolute -top-2 -right-2 h-4 w-4 sm:h-5 sm:w-5 rounded-full bg-red-600 flex items-center justify-center text-xs font-medium text-white"
             >
               {{ cartItemCount }}
@@ -45,7 +45,6 @@
 </template>
 
 <script setup lang="ts">
-// @ts-nocheck
 
 defineProps<{
   cartItemCount?: number;

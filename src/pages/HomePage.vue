@@ -142,7 +142,6 @@
 </template>
 
 <script setup lang="ts">
-// @ts-nocheck
 import { ref, onMounted, computed, nextTick, watch } from 'vue';
 import { useStore } from 'vuex';
 import { useMovies } from '../hooks/useMovies';
@@ -199,7 +198,7 @@ onMounted(() => {
   loadPage(1);
 });
 
-watch(isSearchOpen, async (newValue) => {
+watch(isSearchOpen, async (newValue: boolean) => {
   if (newValue) {
     await nextTick();
     mobileSearchInput.value?.focus();
